@@ -15,7 +15,7 @@ typedef void(^ClickLauchImage)(UIViewController *);
 
 typedef void(^TheAdEnds)(void);
 
-@interface KNLauchViewController : UIViewController
+@interface KNLaunchViewController : UIViewController
 
 
 ///图片加载完成的回调
@@ -25,7 +25,7 @@ typedef void(^TheAdEnds)(void);
 @property(nonatomic, strong)ClickLauchImage imageClickBlock;
 
 ///时间结束
-@property(nonatomic, strong)TheAdEnds timerOverBlock;
+@property(nonatomic, strong)TheAdEnds theAdEnds;
 
 
 
@@ -38,8 +38,8 @@ typedef void(^TheAdEnds)(void);
  @param hideSkip 时候显示跳过的按钮
  @param imageloadingBlock 广告图片加载完成
  @param ClickLauch 点击广告
- @param TimerOverBlock 时间结束
+ @param theAdEnds 创建失败
  */
-+(void)showWithFrame:(CGRect )imageFrame ImageURL:(NSString *)imageURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip ImageLoadingOver:(ImageLoadingOver)imageloadingBlock clickLauchImage:(ClickLauchImage)ClickLauch TimerOver:(TheAdEnds)TimerOverBlock;
++(void)showWithFrame:(CGRect )imageFrame ImageURL:(NSString *)imageURL timeSecond:(NSInteger)timeSecond hideSkip:(BOOL)hideSkip ImageLoadingOver:(ImageLoadingOver)imageloadingBlock clickLauchImage:(ClickLauchImage)ClickLauch theAdEnds:(TheAdEnds)theAdEnds;
 
 @end
