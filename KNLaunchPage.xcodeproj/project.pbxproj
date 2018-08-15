@@ -15,6 +15,7 @@
 		C2DCDD9E2124066D00FD4557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD9C2124066D00FD4557 /* LaunchScreen.storyboard */; };
 		C2DCDDA12124066D00FD4557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA02124066D00FD4557 /* main.m */; };
 		C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */; };
+		C2DCDDAD21240C2800FD4557 /* KNLauchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDAC21240C2800FD4557 /* KNLauchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		C2DCDDA02124066D00FD4557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2DCDDA821240AE000FD4557 /* KNLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNLaunchImage.h; sourceTree = "<group>"; };
 		C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNLaunchImage.m; sourceTree = "<group>"; };
+		C2DCDDAB21240C2800FD4557 /* KNLauchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNLauchViewController.h; sourceTree = "<group>"; };
+		C2DCDDAC21240C2800FD4557 /* KNLauchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNLauchViewController.m; sourceTree = "<group>"; };
 		DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNLaunchPage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,8 @@
 			children = (
 				C2DCDDA821240AE000FD4557 /* KNLaunchImage.h */,
 				C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */,
+				C2DCDDAB21240C2800FD4557 /* KNLauchViewController.h */,
+				C2DCDDAC21240C2800FD4557 /* KNLauchViewController.m */,
 			);
 			path = KNLauch;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DCDD962124066B00FD4557 /* ViewController.m in Sources */,
+				C2DCDDAD21240C2800FD4557 /* KNLauchViewController.m in Sources */,
 				C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */,
 				C2DCDDA12124066D00FD4557 /* main.m in Sources */,
 				C2DCDD932124066B00FD4557 /* AppDelegate.m in Sources */,
