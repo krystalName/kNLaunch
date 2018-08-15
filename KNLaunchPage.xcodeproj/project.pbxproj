@@ -14,6 +14,7 @@
 		C2DCDD9B2124066D00FD4557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD9A2124066D00FD4557 /* Assets.xcassets */; };
 		C2DCDD9E2124066D00FD4557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD9C2124066D00FD4557 /* LaunchScreen.storyboard */; };
 		C2DCDDA12124066D00FD4557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA02124066D00FD4557 /* main.m */; };
+		C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C2DCDD9D2124066D00FD4557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2DCDD9F2124066D00FD4557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DCDDA02124066D00FD4557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2DCDDA821240AE000FD4557 /* KNLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNLaunchImage.h; sourceTree = "<group>"; };
+		C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNLaunchImage.m; sourceTree = "<group>"; };
 		DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNLaunchPage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +76,7 @@
 		C2DCDD902124066B00FD4557 /* KNLaunchPage */ = {
 			isa = PBXGroup;
 			children = (
+				C2DCDDA721240AE000FD4557 /* KNLauch */,
 				C2DCDD912124066B00FD4557 /* AppDelegate.h */,
 				C2DCDD922124066B00FD4557 /* AppDelegate.m */,
 				C2DCDD942124066B00FD4557 /* ViewController.h */,
@@ -84,6 +88,15 @@
 				C2DCDDA02124066D00FD4557 /* main.m */,
 			);
 			path = KNLaunchPage;
+			sourceTree = "<group>";
+		};
+		C2DCDDA721240AE000FD4557 /* KNLauch */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCDDA821240AE000FD4557 /* KNLaunchImage.h */,
+				C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */,
+			);
+			path = KNLauch;
 			sourceTree = "<group>";
 		};
 		FE259F9A7EFF5CDE4EC2B7D6 /* Pods */ = {
@@ -188,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DCDD962124066B00FD4557 /* ViewController.m in Sources */,
+				C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */,
 				C2DCDDA12124066D00FD4557 /* main.m in Sources */,
 				C2DCDD932124066B00FD4557 /* AppDelegate.m in Sources */,
 			);
@@ -333,7 +347,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +365,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
