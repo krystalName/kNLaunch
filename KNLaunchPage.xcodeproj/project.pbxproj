@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEBD461C517570899B25AED9 /* libPods-KNLaunchPage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */; };
 		C2DCDD932124066B00FD4557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD922124066B00FD4557 /* AppDelegate.m */; };
 		C2DCDD962124066B00FD4557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD952124066B00FD4557 /* ViewController.m */; };
 		C2DCDD992124066B00FD4557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD972124066B00FD4557 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.release.xcconfig"; sourceTree = "<group>"; };
+		396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.debug.xcconfig"; sourceTree = "<group>"; };
 		C2DCDD8E2124066B00FD4557 /* KNLaunchPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNLaunchPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DCDD912124066B00FD4557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2DCDD922124066B00FD4557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		C2DCDD9D2124066D00FD4557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2DCDD9F2124066D00FD4557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DCDDA02124066D00FD4557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNLaunchPage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBD461C517570899B25AED9 /* libPods-KNLaunchPage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		379C257A5A3260B96A082DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2DCDD852124066B00FD4557 = {
 			isa = PBXGroup;
 			children = (
 				C2DCDD902124066B00FD4557 /* KNLaunchPage */,
 				C2DCDD8F2124066B00FD4557 /* Products */,
+				FE259F9A7EFF5CDE4EC2B7D6 /* Pods */,
+				379C257A5A3260B96A082DA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = KNLaunchPage;
 			sourceTree = "<group>";
 		};
+		FE259F9A7EFF5CDE4EC2B7D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */,
+				2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2DCDDA42124066D00FD4557 /* Build configuration list for PBXNativeTarget "KNLaunchPage" */;
 			buildPhases = (
+				2FC0AC4974D032A5E1219E36 /* [CP] Check Pods Manifest.lock */,
 				C2DCDD8A2124066B00FD4557 /* Sources */,
 				C2DCDD8B2124066B00FD4557 /* Frameworks */,
 				C2DCDD8C2124066B00FD4557 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC0AC4974D032A5E1219E36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KNLaunchPage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2DCDD8A2124066B00FD4557 /* Sources */ = {
@@ -281,15 +327,13 @@
 		};
 		C2DCDDA52124066D00FD4557 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U258TTAZ4B;
+				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,15 +342,13 @@
 		};
 		C2DCDDA62124066D00FD4557 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U258TTAZ4B;
+				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
