@@ -7,8 +7,8 @@
 //
 
 #import "KNLaunchImage.h"
-#import <SDWebImage/UIImage+GIF.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIImage+GIF.h>
 
 NSString *const timerSender = @"5";
 
@@ -188,20 +188,47 @@ NSString *const timerSender = @"5";
     
     __weak typeof(launchImage) weakLauchImage = launchImage;
     
-    [launchImage.launchImage sd_setImageWithURL:[NSURL URLWithString:imageURL] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if(!error){
-            if(imageURL){
-                if(LaunchCallback){
-                    LaunchCallback(image,[NSString stringWithFormat:@"%@",imageURL]);
-                }
-                [weakLauchImage addSubview:launchImage.skipBtn];
-                weakLauchImage.hiddenSkip = hideSkip;
-                [weakLauchImage dispath_timer];
+    
+    //判断传进来的值。 是不是gif图片
+    if ([imageURL rangeOfString:@".gif"].location != NSNotFound) {
+        ///是gif图片
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]];
+        UIImage *image = [UIImage sd_animatedGIFWithData:data];
+        launchImage.launchImage.image = image;
+        
+        ///把url传出去
+        if(imageURL){
+            if(LaunchCallback){
+                LaunchCallback(image,[NSString stringWithFormat:@"%@",imageURL]);
             }
-        }else{
-            [weakLauchImage skipAction];
+            [weakLauchImage addSubview:launchImage.skipBtn];
+            weakLauchImage.hiddenSkip = hideSkip;
+            [weakLauchImage dispath_timer];
         }
-    }];
+
+    
+    }else
+    {
+        ///如果是普通图片
+        [launchImage.launchImage sd_setImageWithURL:[NSURL URLWithString:imageURL] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            ///如果没错误
+            if(!error){
+                if(imageURL){
+                    if(LaunchCallback){
+                        LaunchCallback(image,[NSString stringWithFormat:@"%@",imageURL]);
+                    }
+                    [weakLauchImage addSubview:launchImage.skipBtn];
+                    weakLauchImage.hiddenSkip = hideSkip;
+                    [weakLauchImage dispath_timer];
+                }
+            }else{
+                [weakLauchImage skipAction];
+            }
+        }];
+    }
+
+    
+    
     launchImage.ImageClick = ^(){
         
         if(ImageClick){
@@ -227,6 +254,10 @@ NSString *const timerSender = @"5";
         [self removeView];
     });
 }
+
+
+
+  
 
 
 ///广告栏点击

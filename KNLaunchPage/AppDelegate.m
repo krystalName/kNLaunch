@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "KNLaunchViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +18,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    NSString *gifImageURL = @"http://pic1.win4000.com/mobile/5/57ad5c46cd49f.gif";
+    
+    [KNLaunchViewController showWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [[UIScreen mainScreen] bounds].size.height-150) ImageURL:gifImageURL timeSecond:5 hideSkip:NO ImageLoadingOver:^(UIImage *image, NSString *imageURL) {
+        
+        
+    } clickLauchImage:^(UIViewController *vc) {
+        
+    } theAdEnds:^{
+        
+        //广告展示完成回调,设置window根控制器
+        
+        ViewController *vc = [[ViewController alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        
+        self.window.rootViewController = nav;
+        
+        
+    }];
+    
+
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
