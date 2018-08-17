@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BEBD461C517570899B25AED9 /* libPods-KNLaunchPage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */; };
+		C2913DEC21269C9800BFC57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2913DEB21269C9800BFC57A /* Assets.xcassets */; };
 		C2DCDD932124066B00FD4557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD922124066B00FD4557 /* AppDelegate.m */; };
 		C2DCDD962124066B00FD4557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD952124066B00FD4557 /* ViewController.m */; };
 		C2DCDD992124066B00FD4557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD972124066B00FD4557 /* Main.storyboard */; };
-		C2DCDD9B2124066D00FD4557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD9A2124066D00FD4557 /* Assets.xcassets */; };
-		C2DCDD9E2124066D00FD4557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DCDD9C2124066D00FD4557 /* LaunchScreen.storyboard */; };
 		C2DCDDA12124066D00FD4557 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA02124066D00FD4557 /* main.m */; };
 		C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDA921240AE000FD4557 /* KNLaunchImage.m */; };
 		C2DCDDAD21240C2800FD4557 /* KNLaucnhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDDAC21240C2800FD4557 /* KNLaucnhViewController.m */; };
@@ -21,14 +20,13 @@
 /* Begin PBXFileReference section */
 		2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.release.xcconfig"; sourceTree = "<group>"; };
 		396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.debug.xcconfig"; sourceTree = "<group>"; };
+		C2913DEB21269C9800BFC57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2DCDD8E2124066B00FD4557 /* KNLaunchPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNLaunchPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DCDD912124066B00FD4557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2DCDD922124066B00FD4557 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2DCDD942124066B00FD4557 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2DCDD952124066B00FD4557 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2DCDD982124066B00FD4557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C2DCDD9A2124066D00FD4557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C2DCDD9D2124066D00FD4557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2DCDD9F2124066D00FD4557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DCDDA02124066D00FD4557 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2DCDDA821240AE000FD4557 /* KNLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNLaunchImage.h; sourceTree = "<group>"; };
@@ -85,9 +83,8 @@
 				C2DCDD942124066B00FD4557 /* ViewController.h */,
 				C2DCDD952124066B00FD4557 /* ViewController.m */,
 				C2DCDD972124066B00FD4557 /* Main.storyboard */,
-				C2DCDD9A2124066D00FD4557 /* Assets.xcassets */,
-				C2DCDD9C2124066D00FD4557 /* LaunchScreen.storyboard */,
 				C2DCDD9F2124066D00FD4557 /* Info.plist */,
+				C2913DEB21269C9800BFC57A /* Assets.xcassets */,
 				C2DCDDA02124066D00FD4557 /* main.m */,
 			);
 			path = KNLaunchPage;
@@ -171,8 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DCDD9E2124066D00FD4557 /* LaunchScreen.storyboard in Resources */,
-				C2DCDD9B2124066D00FD4557 /* Assets.xcassets in Resources */,
+				C2913DEC21269C9800BFC57A /* Assets.xcassets in Resources */,
 				C2DCDD992124066B00FD4557 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,14 +218,6 @@
 				C2DCDD982124066B00FD4557 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C2DCDD9C2124066D00FD4557 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2DCDD9D2124066D00FD4557 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,16 +338,18 @@
 			baseConfigurationReference = 396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,16 +358,18 @@
 			baseConfigurationReference = 2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7RPMUKUBE;
 				INFOPLIST_FILE = KNLaunchPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = krystalname.KNLaunchPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
