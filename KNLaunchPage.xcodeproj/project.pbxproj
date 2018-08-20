@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEBD461C517570899B25AED9 /* libPods-KNLaunchPage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC1449B307A1A0E4CB14CCF /* libPods-KNLaunchPage.a */; };
+		C2590A6F212A6C790092565D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2590A6E212A6C790092565D /* WebViewController.m */; };
 		C2913DEC21269C9800BFC57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2913DEB21269C9800BFC57A /* Assets.xcassets */; };
 		C2DCDD932124066B00FD4557 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD922124066B00FD4557 /* AppDelegate.m */; };
 		C2DCDD962124066B00FD4557 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DCDD952124066B00FD4557 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		2DB53ADDB00364C738A01348 /* Pods-KNLaunchPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.release.xcconfig"; sourceTree = "<group>"; };
 		396A72EF17032631A9E082B2 /* Pods-KNLaunchPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNLaunchPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNLaunchPage/Pods-KNLaunchPage.debug.xcconfig"; sourceTree = "<group>"; };
+		C2590A6D212A6C790092565D /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C2590A6E212A6C790092565D /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		C2913DEB21269C9800BFC57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2DCDD8E2124066B00FD4557 /* KNLaunchPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNLaunchPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DCDD912124066B00FD4557 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				C2DCDD942124066B00FD4557 /* ViewController.h */,
 				C2DCDD952124066B00FD4557 /* ViewController.m */,
 				C2DCDD972124066B00FD4557 /* Main.storyboard */,
+				C2590A6D212A6C790092565D /* WebViewController.h */,
+				C2590A6E212A6C790092565D /* WebViewController.m */,
 				C2DCDD9F2124066D00FD4557 /* Info.plist */,
 				C2913DEB21269C9800BFC57A /* Assets.xcassets */,
 				C2DCDDA02124066D00FD4557 /* main.m */,
@@ -202,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DCDD962124066B00FD4557 /* ViewController.m in Sources */,
+				C2590A6F212A6C790092565D /* WebViewController.m in Sources */,
 				C2DCDDAD21240C2800FD4557 /* KNLaucnhViewController.m in Sources */,
 				C2DCDDAA21240AE000FD4557 /* KNLaunchImage.m in Sources */,
 				C2DCDDA12124066D00FD4557 /* main.m in Sources */,

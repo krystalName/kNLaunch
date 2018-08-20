@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "KNLaunchViewController.h"
 #import "ViewController.h"
+#import "WebViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -23,10 +26,34 @@
     
     NSString *gifImageURL = @"http://pic1.win4000.com/mobile/5/57ad5c46cd49f.gif";
     
+    
+    
+    __weak __typeof (self)weakSelf = self;
     [KNLaunchViewController showWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [[UIScreen mainScreen] bounds].size.height-150) ImageURL:gifImageURL timeSecond:5 hideSkip:NO ImageLoadingOver:^(UIImage *image, NSString *imageURL) {
         
+        NSLog(@"imageUrl ----- %@",imageURL);
         
     } clickLauchImage:^(UIViewController *vc) {
+        
+        __strong __typeof (weakSelf)strongSelf  = weakSelf;
+        
+        WebViewController *VC = [[WebViewController alloc] init];
+        VC.urlStr = @"http://www.baidu.com";
+        VC.title = @"广告";
+        VC.AppDelegateSele = -1;
+        
+        VC.WebBack= ^(){
+            //广告展示完成回调,设置window根控制器
+            
+            ViewController *vc = [[ViewController alloc]init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            
+            strongSelf.window.rootViewController = nav;
+        };
+        
+        
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:VC];
+        [vc presentViewController:nav animated:YES completion:nil];
         
     } theAdEnds:^{
         
